@@ -1,0 +1,91 @@
+.main {
+    margin-top: -3.5em;
+}
+
+
+.bannerTitle {
+    font-size: 5em;
+    text-align: center;
+    color: red;
+}
+
+.mainTitle {
+    font-size: 3em;
+    text-align: center;
+    padding-left: -1em;
+}
+
+.collectionTitle {
+    text-align: center;
+    font-size: 3.5em;
+   
+}
+
+.itemsContainer {
+    margin: 1em;
+}
+
+.productsGrid {
+    width: 100%;
+   
+}
+
+.productsWrapper {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.categoryGrid{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.selector{
+    font-size: 1.5em;
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    margin: 1em;
+    margin-top: 1.2em;
+    
+}
+
+.mailList {
+    text-align: center;
+}
+
+.sliderContainer {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.collectionsTitle {
+    font-size: 3em;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .categoryGrid{
+        font-size: 1em;
+    }
+    .selector{
+        font-size: 1em;
+        font-weight: 750;
+        
+    }
+
+    .categorySelects {
+        font-size: 1.5em;
+    }
+    .collectionsTitle {
+        font-size: 1em;
+    }
+}
+

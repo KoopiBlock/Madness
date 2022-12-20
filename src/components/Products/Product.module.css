@@ -1,0 +1,43 @@
+.productGrid {
+    width: 29%;
+    margin: 2em;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.productLink {
+    cursor: pointer;
+}
+
+.productImage {
+    font-size: 2em;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+
+.productName {
+    text-align: center;
+    font-size: 2.3em;
+}
+
+.productPrice {
+    font-size: 1.8em;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .productGrid {
+        width: 40%;
+        margin: 1.4em;
+    }
+    .productName {
+        font-size: 1.5em;
+    }
+    .productPrice {
+        font-size: 1.3em;
+        
+    }
+}

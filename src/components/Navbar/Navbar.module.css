@@ -1,0 +1,290 @@
+.navbar {
+    color: #CF0A0A;
+    background-color: rgb(0, 0, 0, 1);
+    position: sticky;
+    margin-top: -1em;
+}
+
+.logoContainer {
+    display: flex;
+    cursor: pointer;
+    margin-left: 2.5em;
+    margin-top: -.7em;
+}
+
+.logoTitle {
+    margin: 1.5em 1em 1em 0em;
+    font-size: 1.5em;
+}
+
+.container {
+    margin: 0;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.linkList {
+    list-style:none;
+}
+
+.linkItem {
+    margin-top: -.3em;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.linkItem:hover {
+    transform: scale(1.1);
+    text-decoration:underline ;
+    text-decoration-color: red ;
+    
+}
+
+.linkTitle {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+
+.cartButton {
+    margin-right: .4em;
+    background-color: transparent;
+    border: none;
+    color: #CF0A0A;
+    padding: .5em;
+    font-size: 2em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cartButton:hover {
+    transform: scale(1.1);
+}
+
+.hamburgerMenu {
+    font-size: 2.5em;
+    margin-top: .5em;
+    margin-left: .5em;
+    cursor: pointer;
+    
+}
+
+.sideBarActive {
+    color: #CF0A0A;
+    float: left;
+    font-size: 1.5em;
+    background-color: black;
+    width: 33%;
+    position: absolute;
+    overflow-y: scroll;
+    height: 90vh;
+    padding-top: -2.5em;
+    left: 0;
+    animation: .4s ease-in-out   swingMenu ;
+    margin-top: -.2em;
+  
+    
+}
+
+@keyframes swingMenu {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes swingMenuBack {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.sideBarActiveNot {
+    color: #CF0A0A;
+    float: left;
+    font-size: 1.5em;
+    background-color: black;
+    width: 33%;
+    position: absolute;
+    overflow-y: scroll;
+    height: 100vh;
+    padding-top: -2em;
+    left: 0;
+    margin-top: -.5em;
+    animation: .4s ease-in  forwards swingMenuBack ;
+}
+
+
+.sideLinksList {
+    list-style: none;
+    margin-top: -.2em;
+    padding: -1em 1em;
+  
+    z-index: 100;
+}
+
+.CategoryLink { 
+    cursor: pointer;
+    padding: .4em .5em;
+}
+
+
+.collectionList {
+    list-style: none;
+    animation: .3s ease-in  forwards growDown ;
+}
+
+.collectionLink {
+    cursor: pointer;
+    padding: .4em .5em;
+    
+}
+
+
+@keyframes growDown {
+    0% { 
+        opacity: 0;
+        transform: translateY(-60px);
+      }
+    
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+
+@keyframes swingMenuUp {
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+
+.arrow {
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+.conatctInfo {
+    margin-top: 1.5em;
+    margin-left: -2em;
+    font-size: .8em;
+    text-decoration: underline;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .sideBarActive {
+        margin-top: -.1em;
+        font-size: 1.5em;
+        width: 50%;
+        height: 100vh;
+
+    }
+    .sideBarActiveNot {
+        margin-top: -.1em;
+        font-size: 1.5em;
+        width: 50%;
+        height: 100vh;
+
+    }
+
+    .CategoryLink {
+        padding: .8em .5em;
+    }
+
+    .hamburgerMenu {
+        margin-top: .7em;
+    }
+
+    .cartButton {
+        margin-top: .4em;
+        margin-right: .3em;
+    }
+
+    .logoContainer {
+        margin-left: 2.5em;
+        margin-top: -1em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sideBarActive {
+        margin-top: -.1em;
+        font-size: 1.5em;
+        width: 72%;
+        height: 100vh;
+
+    }
+
+    .sideBarActiveNot {
+        margin-top: -.1em;
+        font-size: 1.5em;
+        width: 72%;
+        height: 100vh;
+
+    }
+
+    .CategoryLink {
+        padding: .8em .5em;
+    }
+
+    .hamburgerMenu {
+        margin-top: .7em;
+    }
+
+    .cartButton {
+        margin-top: .4em;
+        margin-right: .3em;
+    }
+
+    .logoContainer {
+        margin-left: 2.5em;
+        margin-top: -1em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sideBarActive {
+        margin-top: -.1em;
+        font-size: 1.5em;
+        width: 82%;
+        height: 100vh;
+
+    }
+
+    .sideBarActiveNot {
+        margin-top: -.1em;
+        font-size: 1.5em;
+        width: 82%;
+        height: 100vh;
+
+    }
+
+    .CategoryLink {
+        padding: .8em .5em;
+    }
+
+    .hamburgerMenu {
+        margin-top: .7em;
+    }
+
+    .cartButton {
+        margin-top: .4em;
+        margin-right: .3em;
+    }
+
+    .logoContainer {
+        margin-left: 2.5em;
+        margin-top: -1em;
+    }
+}

@@ -1,0 +1,9 @@
+#snipcart-main-container a.snipcart-next, #snipcart-main-container a.snipcart-finalize, #snipcart-main-container a.snipcart-mainaction {
+    background: rgb(135,219,87);
+    background: -moz-linear-gradient(top,  rgba(135,219,87,1) 1%, rgba(101,203,54,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(135,219,87,1)), color-stop(100%,rgba(101,203,54,1)));
+    background: -webkit-linear-gradient(top,  rgba(135,219,87,1) 1%,rgba(101,203,54,1) 100%);
+    background: -o-linear-gradient(top,  rgba(135,219,87,1) 1%,rgba(101,203,54,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(135,219,87,1) 1%,rgba(101,203,54,1) 100%); 
+    background: linear-gradient(to bottom,  rgba(135,219,87,1) 1%,rgba(101,203,54,1) 100%);
+  }

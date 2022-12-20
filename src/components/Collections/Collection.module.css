@@ -1,0 +1,18 @@
+.collectionName { 
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 3em;
+}
+
+
+.collectionsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 0;
+}
+
+.singleCollectionContainer {
+    cursor: pointer;
+    margin: 1.5em;
+}

@@ -1,0 +1,48 @@
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+.input {
+    background-color: transparent;
+    border: black solid 4px;
+    color: black;
+    font-size: 1.5em;
+    padding: .5em 1em;
+}
+
+.formButton {
+    border: black solid 4px;
+    font-size: 2em;
+    cursor: pointer;
+    padding: .5em;
+    background-color: black;
+    border: none;
+}
+
+.formButton:hover{
+   
+    background-color: rgb(44, 44, 44);
+}
+
+.formButtonIcon {
+    color: #CF0A0A;
+   
+    margin-top: .2em;
+    margin-right: .2em;
+}
+
+.formTitle {
+    font-size: 1.5em;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+@media screen and (max-width: 600px) {
+   .formCOntainer {
+    min-width: 0;
+    font-size: .7em;
+   }
+}

@@ -1,34 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## things to complete:
 
-## Getting Started
+[v] set Nevbar to present at all times. (bonus footer)
 
-First, run the development server:
+[x] add a product grid componnent. _(unnecery...)_
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+[v] connect snipcart to project(just like in egg-store aka wrap snipcart provider in: \_app).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[V] fetch shipping rates from printful to snipcart via our api.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+    - snipcart has webhooks
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+    - after snipcart event has happend our app should listen for it.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+    - and use that webhook`s response and trtasfer its body to printful api
 
-## Learn More
+[v] post order to printiful from snipcart via our api.
 
-To learn more about Next.js, take a look at the following resources:
+[V] collections component and dynamic page for each collection.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[x] categories component and dynamic page for each category. (nope..)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[v] add a side menu with and create pages for:
 
-## Deploy on Vercel
+    [v] useEffect / [x] getStaticPorps ?
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    [v] categories(link to browse by category)
+    [v] collections((link to component in main page.)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    [v] links to refund policy page
+    [v] faq page
+    [v] contact us form
+    [v] about us page
+
+[v] mailing list compnent!
+(https://www.youtube.com/watch?v=a8Om25FbaJA&t=850s&ab_channel=EasyTutorials)
+
+[v] add animations to navbar & size charts states
+
+[v] fix hover overflow/ overlap
+
+[v] fix fucking charts div overlpa bug / navbar being overlaped by every single div
+
+[v] fix suggdest lits in product page
+
+[v] fix overflow of images onto navbar
+[v] fix double render bug
+
+[v] custumize snipcart to fit shop colors
+
+[] add actual socila links
+
+[] upload to vercel and open source this project.
+
+echo "# Madness-shop" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/KoopiBlock/Madness-shop.git
+git push -u origin main
+
+......................................
+
+git remote add origin https://github.com/KoopiBlock/Madness-shop.git
+git branch -M main
+git push -u origin main

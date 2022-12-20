@@ -1,0 +1,15 @@
+.collectionPageContainer {
+    margin: auto;
+    text-align: center;
+}
+
+.collectionTitle {
+    font-size: 3em;
+}
+
+.productGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+

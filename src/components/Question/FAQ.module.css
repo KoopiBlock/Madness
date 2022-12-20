@@ -1,0 +1,38 @@
+.faqPage {
+    text-align: center;
+}
+
+.faqTitle {
+    font-size: 2.5em;
+}
+
+.questionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:#CF0A0A ;
+    padding: .2em 2em;
+    
+    border-radius: 1em;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 2em;
+    margin-top: .8em;
+    margin-left: 1em;
+}
+
+.answerContainer {
+    text-align: left;
+    font-size: .8em;
+    margin-left: .8em;
+    padding: .1em 2em;
+    color: white;
+}
+
+.container {
+    background-color: black;
+    border-radius: 2em;
+    margin: 2em;
+}

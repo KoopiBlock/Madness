@@ -1,0 +1,348 @@
+.productGrid {
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+    z-index: -2;
+   
+}
+.ImagesGrid {
+    width: 50%;
+    
+}
+
+.productDescGrid{
+    
+    width: 45%;
+    min-width: 0;
+    
+}
+
+.productsListGrid {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    min-width: 0;
+    
+}
+
+.mailList {
+    text-align: center;
+}
+
+.productLink {
+    cursor: pointer;
+}
+
+.productImage {
+    cursor: pointer;
+    transition: 0.5s;
+    width: 100%;
+    
+}
+.productImage:hover {
+    transform: scale(1.05);
+}
+
+.bigImageGrid{
+    margin: auto;
+    width: 73%;
+}
+
+.bigImage {
+    cursor: pointer;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.imageContainer {
+    width: 40%;
+}
+
+.selectedImage {
+   background-color: #f02d34;
+   width: 100%;
+}
+
+.smallImageGrid{
+    width: 30%;
+    margin: 1em;
+}
+
+.galleryGrid{
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+}
+
+.chartsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.charts {
+    width: 50%;
+    margin: .1em 1em;
+}
+
+.chartsTitle {
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    text-align: center;
+    margin: 0em ;
+    border: 1px solid black;
+}
+
+.tableRow {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   text-align: center;
+   min-width: 0;
+}
+
+.tableCell {
+    padding: .5em;
+    
+}
+
+.prdouctDescGrid {
+    display: flex;
+    min-width: 0;
+   
+}
+
+.sizechartImage {
+    margin: 2em;
+    
+    
+}
+
+
+.sizeGrid {
+    display: flex;
+    min-width: 0; 
+    
+}
+
+.buyBtn {
+    letter-spacing: 3px;
+    margin-top: 1.5em;
+    background-color: black;
+    color: #f02d34;
+    font-weight: 600;
+    font-size: 1.5em;
+    padding: .7em;
+    border: 3px solid black;
+    border-radius: .5em;
+    cursor: pointer;
+    transition: ease-in .1s;
+}
+
+.buyBtn:hover {
+    background-color: #f02d34;
+    color: black;
+    transform: scale(1.1);
+}
+
+.descBlock {
+    margin-top: 2em;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.chartBtn {
+    color: black;
+    background-color: transparent;
+    padding: 1em;
+    font-size: 1em;
+    border: 2px black solid;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.highLight {
+    color: #f02d34;
+}
+
+
+.chartsSelcContainer {
+    text-align: center;
+  
+    min-width: 0;
+}
+
+
+
+.productName {
+    font-size: 3em;
+    letter-spacing: 2.5px;
+}
+
+.productsTitle {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.ProductChartsGrid {
+   
+    text-align: center;
+    width: 100%;
+    animation: .3s ease-in  forwards growDown ;   
+    z-index: -1;
+}
+
+@keyframes growDown {
+    0% { 
+        opacity: 0;
+        transform: translateY(-60px);
+      }
+    
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+}
+
+.ProductChartsGridNot {
+    text-align: center;
+    width: 100%;
+    animation: .3s ease-out  forwards growUp ;   
+    z-index: -1;
+}
+
+@keyframes growUp {
+    0% { 
+        opacity: 0;
+        transform: translateY(0);
+      }
+    
+      100% {
+        opacity: 1;
+        transform: translateY(-60px);
+      }
+}
+
+
+.chartsSelector {
+    color: black;
+    background-color: transparent;
+    border: transparent;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    cursor: pointer;
+    
+}
+
+.productSizeDesc {
+    padding: 1em;
+    text-align: left;
+}
+/*This is Mobile view lololololollololol*/
+
+
+
+@media screen and (max-width: 800px) {
+
+    .productGrid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ImagesGrid {
+        width: 100%;
+        margin-bottom: -1em;
+    }
+
+    .galleryGrid{
+        justify-content: center;
+    }
+
+    .smallImageGrid{
+        width: 25%;
+    }
+
+    .bigImage {
+        width: 100%;
+    }
+
+    .prdouctDescGrid {
+        width: 100%;
+        font-size: 1.5em;
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    .productDescGrid{
+        width: 100%;
+        text-align: center;
+    }
+
+    .buyBtn{
+        font-size: 2em;
+        padding: .8em 1.5em;
+    }
+
+    .chartBtn {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-size: 2em;
+    }
+
+    .sizeGrid {
+        justify-content: center;
+
+    }
+
+    .chartsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .charts {
+        width: 92%;
+        margin: .1em 1em;
+    }
+
+}
+
+
+@media screen and (max-width: 390px) {
+    .buyBtn{
+        font-size: 1.5em;
+        padding: .8em 1em;
+    }
+    .chartBtn {
+        margin-top: 1.4em;
+        margin-bottom: 1.4em;
+        font-size: 1.5em;
+    }
+
+    .sizeGrid {
+        justify-content: center;
+        font-size: .8em;
+
+    }
+
+    .prdouctDescGrid {
+        width: 90%;
+        font-size: 1.5em;
+        flex-direction: column;
+        min-width: 0;
+        
+    }
+
+    .productSize {
+        font-size: 2em;
+    }
+
+    
+}

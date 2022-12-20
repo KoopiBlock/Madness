@@ -1,5 +1,6 @@
 html,
 body {
+  
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -20,7 +21,40 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: black;
+    background: white;
   }
+}
+
+#snipcart {
+  --color-default: hsl(0, 0%, 0%);
+    --color-alt: hsl(0, 0%, 50%);
+    --color-icon: hsl(0, 90%, 40%);
+    --color-success: hsl(0, 50%, 55%);
+    --color-error: hsl(6, 100%, 16%);
+
+    --color-link: hsl(0, 70%, 55%);
+    --color-link-hover: hsl(0, 100%, 49%);
+
+    --color-badge: var(--color-link);
+    --color-badge-active: var(--color-link);
+    --color-badge-disabled: var(--color-alt);
+
+    --bgColor-badge: hsl(0, 0%, 0%);
+    --bgColor-badge-active: hsl(0, 0%, 0%);
+    --bgColor-badge-disabled: hsl(0, 0%, 0%);
+
+
+    
+
+
+  --bgColor-buttonPrimary: hsl(0, 100%, 35%);
+    --bgColor-buttonPrimary-hover: hsl(0, 70%, 30%);
+
+    --borderColor-default: rgba(255, 0, 0, 0.1);
+    --borderColor-error: hsl(6, 55%, 30%);
+
+    --borderColor-badge: transparent;
+    --borderColor-badge-active: transparent;
+    --borderColor-badge-disabled: transparent;
 }
