@@ -80,9 +80,6 @@ const Navbar = () => {
   }, [])
 
 
-  const logo = urlFor(contactData?.brandLogo)
-
-
   return (
     <>
     <div className={styles.navbar}>
@@ -92,7 +89,9 @@ const Navbar = () => {
           </div>
             <Link href='/'>
               <div className={styles.logoContainer}>
-                <img src={logo} alt='e' width='110' height='110' />
+                {contactData.brandLogo && (
+                  <img src={urlFor(contactData?.brandLogo).url()} alt='e' width='110' height='110' />
+                )}
                 <h1 className={styles.logoTitle}></h1>
               </div>
             </Link >
