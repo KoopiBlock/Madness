@@ -11,7 +11,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { useSpring, animated } from 'react-spring'
 import styles from './Navbar.module.css'
 
-import logo from '../../../public/images/logoB.png' 
+import logo from '../../assets/logoB.png'
 import { client } from '../../lib/sanity_client'
 
 
