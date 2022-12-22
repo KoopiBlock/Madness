@@ -89,7 +89,7 @@ const Navbar = () => {
           </div>
             <Link href='/'>
               <div className={styles.logoContainer}>
-                <Image src={'../../assets/logoB.png'} alt='e' width='110' height='110' />
+                <Image src={'/static/images/logoB.png'} alt='e' width='110' height='110' />
                 <h1 className={styles.logoTitle}></h1>
               </div>
             </Link >
