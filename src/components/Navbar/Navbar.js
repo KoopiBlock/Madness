@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import React from 'react'
 import { useState, useEffect, useRef } from 'react'
 import { FiShoppingCart } from 'react-icons/fi'
@@ -12,7 +11,8 @@ import { useSpring, animated } from 'react-spring'
 import styles from './Navbar.module.css'
 
 
-import { client } from '../../lib/sanity_client'
+import { client, urlFor } from '../../lib/sanity_client'
+
 
 
 
@@ -80,6 +80,9 @@ const Navbar = () => {
   }, [])
 
 
+  const logo = urlFor(contactData.brandLogo)
+
+
   return (
     <>
     <div className={styles.navbar}>
@@ -89,7 +92,7 @@ const Navbar = () => {
           </div>
             <Link href='/'>
               <div className={styles.logoContainer}>
-                <Image src={"/images/logoB.png"} alt='e' width='110' height='110' />
+                <img src={logo} alt='e' width='110' height='110' />
                 <h1 className={styles.logoTitle}></h1>
               </div>
             </Link >

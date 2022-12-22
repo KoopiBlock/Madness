@@ -30,6 +30,14 @@ export default {
                         ]
                     }
                 ]
-            }
+            },
+            {
+                name: 'brandLogo',
+                title: 'Brand Logo',
+                type: 'image',
+                options: {
+                    hotspot: true,
+                }
+            },
         ]
 }
