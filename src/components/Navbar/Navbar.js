@@ -80,7 +80,7 @@ const Navbar = () => {
   }, [])
 
 
-  const logo = urlFor(contactData.brandLogo)
+  const logo = urlFor(contactData?.brandLogo)
 
 
   return (
